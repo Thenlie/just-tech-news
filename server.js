@@ -13,7 +13,7 @@ const app = express();
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
 const sess = {
-    secret: process.env.DB_SECRET,
+    secret: 'somerandomstringoftext',
     cookie: {},
     resave: false,
     saveUninitialized: true,
